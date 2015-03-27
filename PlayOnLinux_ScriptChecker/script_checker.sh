@@ -221,14 +221,18 @@ check_var_repertoire()
 }
 check_shebang()
 {
-        s_echo "Checking #!/bin/bash presence"
+        s_echo "Checking #!/usr/bin/env playonlinux-bash presence"
 
-	if [ "$(cat /tmp/script | head -n 1)" = "#!/bin/bash" ]
+
+	if [ "$(cat /tmp/script | head -n 1)" = "#!/usr/bin/env playonlinux-bash" ]
 	then
  		s_ok 3
+	elif [ "$(cat /tmp/script | head -n 1)" = "#!/bin/bash" ]
+	then
+ 		s_war 3
 	else
 		s_err 3
-	fi	
+	fi
 }
 check_programfiles_prefixcreate()
 {
