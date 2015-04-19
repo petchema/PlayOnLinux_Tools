@@ -27,13 +27,13 @@ Version: $VERSION$REVISION
 Section: misc
 Priority: optional
 Architecture: all
-Depends: unzip, wine | wine-stable | wine-unstable | wine:i386 | wine-stable:i386 | wine-unstable:i386, wget, xterm, python, python-wxgtk2.8, imagemagick, cabextract, icoutils, p7zip-full
+Depends: unzip, wine32 | wine32-development | wine | wine-stable | wine-unstable | wine:i386 | wine-stable:i386 | wine-unstable:i386, wget, xterm | x-terminal-emulator, python, python-wxgtk2.8 | python-wxgtk3.0, imagemagick, cabextract, icoutils, p7zip-full
 Maintainer: PlayOnLinux Packaging <packages@playonlinux.com> 
 Description: This program is a front-end for wine. 
  It permits you to install Windows Games and softwares 
  on Linux. It allows you to manage differents virtual hard drive, 
  and several wine versions.
- Copyright 2011 PlayOnLinux team <contact@playonlinux.com>
+ Copyright 2015 PlayOnLinux team <contact@playonlinux.com>
 EOF
 
 #mise à jour du git
@@ -96,13 +96,13 @@ Section: misc
 Priority: optional
 Installed-Size: $installed_size
 Architecture: all
-Depends: unzip, wine | wine-stable | wine-unstable | wine:i386 | wine-stable:i386 | wine-unstable:i386, wget, xterm, python, python-wxgtk2.8, imagemagick, cabextract, icoutils, p7zip-full
+Depends: unzip, wine32 | wine32-development, wget, xterm | x-terminal-emulator, python, python-wxgtk2.8 | python-wxgtk3.0, imagemagick, cabextract, icoutils, p7zip-full
 Maintainer: PlayOnLinux Packaging <packages@playonlinux.com>
 Description: This program is a front-end for wine.
  It permits you to install Windows Games and softwares
  on Linux. It allows you to manage differents virtual hard drive,
  and several wine versions.
- Copyright 2011 PlayOnLinux team <contact@playonlinux.com>
+ Copyright 2015 PlayOnLinux team <contact@playonlinux.com>
 EOF
 
 cd "$DIRECTORY"
